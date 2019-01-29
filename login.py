@@ -16,4 +16,20 @@ driver.get(login_url)
 i = 0  # To go through usernames series.
 user = usr.usernames[i]
 
+# Form Inputs Func #
+# https://www.w3schools.com/xml/xpath_syntax.asp
+
+def get_user_and_login():
+
+    input_user = driver.find_element_by_xpath('//*[@name="username"]')
+    input_user.send_keys(user)
+
+    input_psswd = driver.find_element_by_xpath('//*[@name="password"]')
+    input_psswd.send_keys(usr.key)
+
+    input_psswd.submit()
+    input_user.submit()
+
+# Login Call #
+get_user_and_login()
 
