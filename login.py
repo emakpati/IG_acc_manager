@@ -13,7 +13,7 @@ driver = webdriver.Chrome(executable_path="/Users/Ekene/Downloads/chromedriver")
 login_url = "https://www.instagram.com/accounts/login/"
 driver.get(login_url)
 
-i = 0  # To go through usernames series.
+i = 0  # To go through usernames series in excel sheet.
 user = usr.usernames[i]
 
 # Form Inputs Func #
