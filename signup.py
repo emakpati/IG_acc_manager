@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys  # For sending keyboard keys
 import user_info as usr
 
-driver = webdriver.Chrome(executable_path="/Users/Ekene/Downloads/chromedriver")
+driver = webdriver.Chrome(executable_path="/chromedriver")
 
 # Signup #
 signup_url = "https://www.instagram.com/"
